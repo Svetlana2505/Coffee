@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        @@include('blocks/header-nav.html') @@include('blocks/header-text.html')
+      </div>
+    </header>
+    <main class="main ">
+      <section class="section section-best-coffee">
+        <div class="container">
+          @@include('blocks/best-coffee.html')
+        </div>
+      </section>
+
+      <section class="section ">
+        <div class="container">
+          @@include('blocks/coffee-style.html')
+        </div>
+      </section>
+
+      <section class="section section-advantages">
+        <div class="container">
+          @@include('blocks/advantages.html')
+        </div>
+      </section>
+
+      <section class="section section-images">
+        <div class="section-img__coffee">
+          <img
+            src="../../img/section4-coffee_bean.png"
+            srcset="../img/section4-coffee_bean.png"
+            alt="coffee"
+          />
+        </div>
+
+        <div class="container">
+          @@include('blocks/section-img.html')
+        </div>
+      </section>
+
+      <section class="section section-feebdack">
+        <div class="container">
+          @@include('blocks/swiper-feedback.html')
+        </div>
+        @@include('blocks/subscribe.html')
+      </section>
+    </main>
+    <footer class="footer section section-footer">
+      <div class="container">
+        @@include('blocks/footer.html')
+      </div>
+    </footer>
+
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
