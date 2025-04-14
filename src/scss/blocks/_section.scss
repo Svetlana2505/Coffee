@@ -113,7 +113,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 575px;
+    top: -200px;
     width: 297px;
     height: 358px;
     z-index: 10;
@@ -123,12 +123,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
   .section-footer::before {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 575px;
+    top: -200px;
     width: 297px;
     height: 358px;
     z-index: 10;

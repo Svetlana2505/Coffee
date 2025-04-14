@@ -1,7 +1,7 @@
 .header {
   background: linear-gradient(90deg, #1e1e1e 0%, rgba(0, 0, 0, 0) 100%),
     url(./../../img/coffee_image.jpg);
-  background-position: center;
+  background-position: top right 33%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -49,7 +49,7 @@
   color: #d4c17f;
 }
 .open {
-  width: 25px;
+  width: 35px;
   height: 20px;
   background: rgba(0, 0, 0, 0);
   border: none;

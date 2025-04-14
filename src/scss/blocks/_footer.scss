@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   padding: 162px 0 278px;
 }
 
@@ -11,16 +10,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 66px;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
 }
 
 .footer__info-text {
   color: var(--white);
-
   display: flex;
   flex-direction: column;
   gap: 22px;
-  max-width: 380px;
 
   h2 {
     font-family: var(--second-family);
@@ -63,4 +62,38 @@
 .social {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__info-list {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .footer__info-item {
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    padding: 100px 0;
+  }
+  .footer__info-text {
+    text-align: center;
+    justify-content: center;
+  }
+  .social {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer__info-text {
+    flex-basis: 380px;
+  }
 }
